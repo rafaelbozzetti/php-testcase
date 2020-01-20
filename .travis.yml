@@ -1,0 +1,7 @@
+language: php
+php: 
+  - '7.3'
+install:
+  - composer install --no-dev --quiet
+script:
+  - phpunit -c phpunit.xml --coverage-text
